@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC107"
+    tools:context=".MainActivity">
+
+    <!-- Tic Tac Toe Grid -->
+    <!-- Repeat for other buttons -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="343dp"
+        android:layout_height="568dp"
+        android:layout_centerInParent="true"
+        android:alignmentMode="alignMargins"
+        android:columnCount="3"
+        android:columnOrderPreserved="false"
+        android:rowCount="3"
+        android:rowOrderPreserved="false">
+
+        <!-- Buttons for Tic Tac Toe grid -->
+        <Button
+            android:id="@+id/button_00"
+            android:layout_width="114dp"
+            android:layout_height="122dp"
+            android:background="@drawable/grid_button_background"
+            android:onClick="onGridButtonClick"
+            android:padding="16dp"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_01"
+            android:layout_width="114dp"
+            android:layout_height="122dp"
+            android:background="@drawable/grid_button_background"
+            android:onClick="onGridButtonClick"
+            android:padding="16dp"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_02"
+            android:layout_width="114dp"
+            android:layout_height="122dp"
+            android:background="@drawable/grid_button_background"
+            android:onClick="onGridButtonClick"
+            android:padding="16dp"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_10"
+            android:layout_width="114dp"
+            android:layout_height="122dp"
+            android:background="@drawable/grid_button_background"
+            android:onClick="onGridButtonClick"
+            android:padding="16dp"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_11"
+            android:layout_width="114dp"
+            android:layout_height="122dp"
+            android:background="@drawable/grid_button_background"
+            android:onClick="onGridButtonClick"
+            android:padding="16dp"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_12"
+            android:layout_width="114dp"
+            android:layout_height="122dp"
+            android:background="@drawable/grid_button_background"
+            android:onClick="onGridButtonClick"
+            android:padding="16dp"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_20"
+            android:layout_width="114dp"
+            android:layout_height="122dp"
+            android:background="@drawable/grid_button_background"
+            android:onClick="onGridButtonClick"
+            android:padding="16dp"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_21"
+            android:layout_width="114dp"
+            android:layout_height="122dp"
+            android:background="@drawable/grid_button_background"
+            android:onClick="onGridButtonClick"
+            android:padding="16dp"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_22"
+            android:layout_width="114dp"
+            android:layout_height="122dp"
+            android:background="@drawable/grid_button_background"
+            android:onClick="onGridButtonClick"
+            android:padding="16dp"
+            android:textSize="24sp" />
+
+
+    </GridLayout>
+
+    <!-- Reset Button -->
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset Game"
+        android:textSize="20sp"
+        android:layout_below="@id/gridLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:onClick="onResetButtonClick"/>
+
+</RelativeLayout>
